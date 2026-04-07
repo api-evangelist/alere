@@ -1,7 +1,11 @@
 aid: alere
-url: https://raw.githubusercontent.com/api-evangelist/alere/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/alere/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.alere.com
+description: >-
+  Abbott Rapid Diagnostics (formally Alere) and Point of Care Testing (POCT). Find
+  out more about our best-in-class products and solutions.
