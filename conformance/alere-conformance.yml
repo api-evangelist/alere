@@ -1,0 +1,24 @@
+generated: '2026-06-20'
+method: derived
+source: apis.yml (RALS API description and tags)
+note: >-
+  Derived from catalog descriptions only; no OpenAPI specification is available
+  to confirm security schemes, error formats, or pagination conventions.
+standards:
+  - id: hl7
+    conforms: true
+    evidence: >-
+      apis.yml RALS API description states the platform "supports HL7 messaging
+      standards for healthcare interoperability"; tags include HL7.
+  - id: oauth2
+    conforms: false
+    evidence: no OpenAPI securitySchemes or docs available to confirm
+  - id: oidc
+    conforms: false
+    evidence: no /.well-known/openid-configuration served (404)
+  - id: fhir-r4
+    conforms: false
+    evidence: no evidence of FHIR resource shapes; integration is HL7 v2-style messaging
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no OpenAPI error responses available to confirm

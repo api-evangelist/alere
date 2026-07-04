@@ -1,0 +1,37 @@
+generated: '2026-06-20'
+method: searched
+source: probed live hosts from apis.yml baseURL / common Website links
+note: >-
+  Alere was acquired by Abbott in 2017 and now operates as Abbott Rapid
+  Diagnostics. No .well-known discovery documents were served on any reachable
+  host. The api.rals.com base host did not resolve (connection failed).
+hosts:
+  - host: https://www.rals.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://www.globalpointofcare.abbott
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://api.rals.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 000
+        note: host did not resolve / connection failed
