@@ -37,6 +37,8 @@ apis:
       - type: Documentation
         url: https://www.rals.com/us/en/home.html
 common:
+  - type: DomainSecurity
+    url: security/alere-domain-security.yml
   - type: WellKnown
     url: well-known/alere-well-known.yml
   - type: LLMsTxt
