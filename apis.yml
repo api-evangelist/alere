@@ -52,7 +52,7 @@ apis:
     baseURL: https://api.rals.com
     tags:
       - Diagnostics
-      - Point Of Care
+      - Point of Care
       - Laboratory
       - Healthcare
       - HL7
@@ -84,7 +84,7 @@ common:
     url: https://www.linkedin.com/company/alere-informatics-inc.
 tags:
   - Diagnostics
-  - Point Of Care
+  - Point of Care
   - Healthcare
   - Laboratory
   - Medical Devices
