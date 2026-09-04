@@ -1,3 +1,4 @@
+name: Alere
 aid: alere
 deliveryModel:
   model: unknown
@@ -22,6 +23,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.alere.com', status: 301, note: 'declared website redirects to https://www.globalpointofcare.abbott/us/en/index.html?ao=1 — a different registrable domain (alere.com -> globalpointofcare.abbott), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alere.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/alere/refs/heads/main/apis.yml
