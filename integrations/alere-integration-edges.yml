@@ -1,0 +1,99 @@
+edges:
+- partner_name: FDA 510(k) premarket notifications (IVD / surgical panels)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K182988
+  category: FDA-cleared IVD / surgical device
+  contract_reference:
+    register: openFDA device/510k (decision_date >= 2016-01-01; panels CH HE IM MI PA TX SU OR)
+    standard: FDA 510(k) premarket clearance (IVD / surgical panels)
+    spec_file: null
+    role: fda-510k-holder
+    registered_name: Alere Technologies AS
+    matched_domain: alere.com
+    matched_by: domain
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    register_id: K182988
+    certified_products:
+    - product: FDA 510(k) clearance, Clinical Chemistry panel
+      product_type: Clinical Chemistry
+      review_panel: CH
+      lapsed: false
+      latest_decision: '2018-11-29'
+      devices_sample:
+      - Afinion HbA1c Dx
+      - Afinion HbA1c Dx on Afinion 2
+    signal_note: certified_products = one entry per FDA review PANEL held, never per device; openFDA carries decisions,
+      not withdrawals, so lapsed is always false
+    identity: wikidata Q28974588 'Alere (Germany)' P856 http://www.alere.com/en/home.html#IN
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
+- partner_name: FDA CLIA test categorizations
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfClia/search.cfm
+  category: CLIA-categorized test system maker
+  contract_reference:
+    register: FDA CLIA test categorization database (clia_detail.zip)
+    standard: FDA CLIA categorization
+    spec_file: null
+    role: clia-categorized-test-system-maker
+    registered_name: Alere
+    matched_domain: alere.com
+    matched_by: domain
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    register_id: CR180661
+    certified_products:
+    - product: FDA CLIA categorization, moderate complexity
+      product_type: moderate
+      lapsed: false
+      latest_effective: 2018/12/04
+      test_systems_sample:
+      - Alere Technologies AS, AS100 Analyzer
+      - Alere Technologies AS, Afinion 2 Analyzer
+      - Alere Technologies AS, Afinion 2 analyzer
+      - Alere Technologies AS, Alere Afinion AS100 Analyzer
+    - product: FDA CLIA categorization, waived complexity
+      product_type: waived
+      lapsed: false
+      latest_effective: 2019/05/29
+      test_systems_sample:
+      - Alere Technologies AS, AS100 Analyzer
+      - Alere Technologies AS, Afinion 2 Analyzer
+      - Alere Technologies AS, Afinion 2 analyzer
+      - Alere Technologies AS, Alere Afinion AS100 Analyzer
+    signal_note: 'certified_products = one entry per CLIA COMPLEXITY held (waived / moderate / high), never per
+      test system; the database lists categorizations, not withdrawals: lapsed false'
+    identity: wikidata Q2640999 'Alere' P856 http://www.alere.com/de/de.html
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    other_registrations:
+    - Alere Technologies AS
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
+generated: '2026-10-21'
+method: searched
+source:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.advamed.org/advameddx/members/
+checked:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://www.advamed.org/advameddx/members/
