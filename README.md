@@ -64,16 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Alere Inc. was a global manufacturer of rapid point-of-care diagnostic tests, founded in 1991 and headquartered in Waltham, Massachusetts. The company operated three business units focused on cardiometabolic, infectious disease, and toxicology testing. Alere was acquired by Abbott Laboratories on October 3, 2017 for $5.3 billion and now operates as Abbott Rapid Diagnostics.
+Alere Inc. was a global manufacturer of rapid point-of-care diagnostic tests, founded in 1991 and headquartered in Waltham, Massachusetts. The company operated three business units focused on cardiometabolic, infectious disease, and toxicology testing. Alere's product portfolio included the Alere i platform for rapid molecular diagnostics, the Alere CD4 analyser for HIV management, and the RALS point-of-care data management system for laboratory connectivity. Alere Informatics offered web-based solutions including RALS-Freedom, AegisPOC, and RALS-Web3 for point-of-care device management and data integration with laboratory information systems. Abbott Laboratories acquired Alere on October 3, 2017 for $5.3 billion, and the company now operates as Abbott Rapid Diagnostics.
 
-Alere's product portfolio included the Alere i platform for rapid molecular diagnostics, the Alere CD4 analyser for HIV management, and the RALS (Remote Automated Laboratory Systems) point-of-care data management system. Alere Informatics offered web-based solutions including RALS-Freedom, AegisPOC, and RALS-Web3 for point-of-care device management and integration with laboratory information systems (LIS) and electronic health records (EHR) using HL7 messaging standards.
+**Areas:** Diagnostics · Point of Care · Healthcare · Laboratory · Medical Devices · HL7
 
-## APIs
+## Alere on APIs.io
 
-- **RALS Point-of-Care Data Management API** - Platform for connecting point-of-care testing devices to LIS and EHR systems, supporting HL7 bidirectional data exchange for patient demographics, test results, and quality control data.
+Everything profiled for Alere is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alere/](https://apis.io/providers/alere/)** — or go straight to one of the APIs or properties below.
 
-## Links
+### APIs (1)
 
-- [Abbott Rapid Diagnostics (formerly Alere)](https://www.globalpointofcare.abbott/us/en/index.html)
-- [RALS Informatics](https://www.rals.com/us/en/home.html)
-- [LinkedIn](https://www.linkedin.com/company/alere-informatics-inc.)
+- [RALS Point-of-Care Data Management API](https://apis.io/apis/alere/rals-api/) — The RALS (Remote Automated Laboratory Systems) platform provides point-of-care device management and data integration capabilities. RALS connects…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alere Domain Security](https://apis.io/security/alere/alere-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.alere.com)
+
+## API Evangelist rating
+
+**Kin Score 8.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.9 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alere/](https://apis.io/providers/alere/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alere: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alere/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
